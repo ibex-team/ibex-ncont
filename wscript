@@ -8,6 +8,8 @@ def options (opt):
 	opt.add_option ("--with-continuation", action="store_true",
 			dest="WITH_CONTINUATION", help = "Use Continuation plugin")
 
+	opt.plugins["continuation"] = "WITH_CONTINUATION"
+	
 ######################
 ##### configure ######
 ######################
